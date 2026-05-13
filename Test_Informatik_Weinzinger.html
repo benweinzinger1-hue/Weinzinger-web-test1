@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Ben Weinzinger Test</title>
+</head>
+<body style="background-color: rgb(34, 96, 205);">
+    <h1>Ben Weinzinger – 5R</h1>
+
+    <h2>Persönliche Daten</h2>
+    <p>Geburtsdatum: 02.12.2010</p>
+    <p>Lieblingsfarbe: Blau</p>
+
+    <h2>Meine Lieblingsfächer</h2>
+    <ol>
+        <li>Englisch</li>
+        <li>Informatik</li>
+        <li>Sport</li>
+    </ol>
+
+    <h2>Meine Hobbys</h2>
+    <ul id="liste-hobbys"></ul>
+    <h2>freies Bild</h2>
+    <figure><img src="Üben/img/Dülmen,_Kirchspiel,_Dernekamp,_Baum_--_2021_--_9413.jpg  " alt="Ein Baum mit Schnee" width="400px"></figure>
+
+    <script>
+  const hobbys = ["Ben Weinzinger", "Fußball", "Wakeboarding", "Gaming"];  // deine eigenen Hobbys und Name eintragen
+  const liste = document.getElementById("liste-hobbys");
+  hobbys.forEach(h => {
+    let li = document.createElement("li");
+    li.textContent = h;
+    liste.appendChild(li);
+  });
+</script>
+</body>
+</html>
